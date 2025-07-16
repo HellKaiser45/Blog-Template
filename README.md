@@ -1,75 +1,53 @@
-# Qwik City App ⚡️
+# Blog Template (Qwik + QwikCity + Tailwind)
 
-- [Qwik Docs](https://qwik.dev/)
-- [Discord](https://qwik.dev/chat)
-- [Qwik GitHub](https://github.com/QwikDev/qwik)
-- [@QwikDev](https://twitter.com/QwikDev)
-- [Vite](https://vitejs.dev/)
+[![Qwik Version](https://img.shields.io/badge/Qwik-v1.2+-blue.svg)](https://qwik.dev/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-v3.3+-06B6D4.svg)](https://tailwindcss.com/)
+[![DaisyUI](https://img.shields.io/badge/DaisyUI-v3.9+-FF7AC1.svg)](https://daisyui.com/)
+[![Docker Ready](https://img.shields.io/badge/Docker-Ready-2496ED.svg)](https://www.docker.com/)
 
----
+Template de blog haute performance avec :
 
-## Project Structure
+- ⚡ **Qwik** pour le chargement instantané
+- 🎨 **Tailwind CSS + DaisyUI** pour le styling
+- 🌐 **QwikCity** pour le routage SSR/SSG
+- 🐳 **Docker** pour des déploiements simplifiés
 
-This project is using Qwik with [QwikCity](https://qwik.dev/qwikcity/overview/). QwikCity is just an extra set of tools on top of Qwik to make it easier to build a full site, including directory-based routing, layouts, and more.
+## 🚀 Démarrage Rapide
 
-Inside your project, you'll see the following directory structure:
+# 1. Cloner le dépôt
 
-```
-├── public/
-│   └── ...
-└── src/
-    ├── components/
-    │   └── ...
-    └── routes/
-        └── ...
-```
+`git clone https://github.com/HellKaiser45/Blog-Template.git`
 
-- `src/routes`: Provides the directory-based routing, which can include a hierarchy of `layout.tsx` layout files, and an `index.tsx` file as the page. Additionally, `index.ts` files are endpoints. Please see the [routing docs](https://qwik.dev/qwikcity/routing/overview/) for more info.
+`cd Blog-Template`
 
-- `src/components`: Recommended directory for components.
+# 2. Installer les dépendances (avec Bun)
 
-- `public`: Any static assets, like images, can be placed in the public directory. Please see the [Vite public directory](https://vitejs.dev/guide/assets.html#the-public-directory) for more info.
+`bun install`
 
-## Add Integrations and deployment
+# 3. Lancer le dev server
 
-Use the `bun qwik add` command to add additional integrations. Some examples of integrations includes: Cloudflare, Netlify or Express Server, and the [Static Site Generator (SSG)](https://qwik.dev/qwikcity/guides/static-site-generation/).
+`bun run dev`
 
-```shell
-bun qwik add # or `bun qwik add`
-```
+Ouvrir : <http://localhost:5173>
 
-## Development
+🐳 Déploiement en Production (Docker)
 
-Development mode uses [Vite's development server](https://vitejs.dev/). The `dev` command will server-side render (SSR) the output during development.
+```bash
+# Build avec variable obligatoire
+docker build --build-arg SITE_ORIGIN=https://votredomaine.com -t blog-template .
 
-```shell
-npm start # or `bun start`
+# Lancer le container
+docker run -d -p 80:80 --name my-blog blog-template
 ```
 
-> Note: during dev mode, Vite may request a significant number of `.js` files. This does not represent a Qwik production build.
+🏗 Structure du Projet
 
-## Preview
-
-The preview command will create a production build of the client modules, a production build of `src/entry.preview.tsx`, and run a local server. The preview server is only for convenience to preview a production build locally and should not be used as a production server.
-
-```shell
-bun preview # or `bun preview`
-```
-
-## Production
-
-The production build will generate client and server modules by running both client and server build commands. The build command will use Typescript to run a type check on the source code.
-
-```shell
-bun build # or `bun build`
-```
-
-## Static Site Generator (Node.js)
-
-Be sure to configure your server to serve very long cache headers for the `build/**/*.js` files.
-
-Typically you'd set the `Cache-Control` header for those files to `public, max-age=31536000, immutable`.
-
-```shell
-bun build.server
+```text
+├── Dockerfile
+├── tailwind.config.js  # Config Tailwind+DaisyUI
+├── src/
+│   ├── styles/
+│   │   └── globals.css # Importe Tailwind
+│   └── components/     # Composants avec classes Tailwind
+└── public/             # Assets statiques
 ```
