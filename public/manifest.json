@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json.schemastore.org/web-manifest-combined.json",
+  "short_name": "Proactitech",
+  "description": "Cas pratiques, tutoriels et innovations tech pour développeurs et chefs de projet",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#2563eb",
+  "icons": [
+    {
+      "src": "https://res.cloudinary.com/ddismuu6q/image/upload/w_192,h_192,c_fill,f_webp,q_80,fl_lossy/v1739179995/logo-titre.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "https://res.cloudinary.com/ddismuu6q/image/upload/w_512,h_512,c_fill,f_webp,q_80,fl_lossy/v1739179995/logo-titre.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/screenshots/home-desktop.png",
+      "type": "image/png",
+      "sizes": "1280x720",
+      "form_factor": "wide"
+    },
+    {
+      "src": "/screenshots/article-mobile.png",
+      "type": "image/png",
+      "sizes": "375x812",
+      "form_factor": "narrow"
+    }
+  ],
+  "categories": ["technology", "education", "development"]
+}

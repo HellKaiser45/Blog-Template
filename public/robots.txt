@@ -1,0 +1,30 @@
+User-agent: *
+Allow: /
+
+
+# Paramètres de crawl standard (évite la surcharge serveur)
+Crawl-delay: 1
+Request-rate: 1/1s
+
+# Sitemaps (obligatoire pour le référencement)
+Sitemap: https://proactitech.com/sitemap.xml
+Sitemap: https://proactitech.com/sitemap-posts.xml
+
+# Spécificités pour Google (optimisation SEO)
+User-agent: Googlebot
+Allow: /*
+Allow: /*.html
+Allow: /*.json
+Allow: /*.xml
+
+# Configuration spéciale pour les images (rich snippets)
+User-agent: Googlebot-Image
+Allow: /images/
+Allow: /assets/
+
+# Blocage des scrapers agressifs seulement
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /

@@ -1,0 +1,186 @@
+---
+slug: "ma-stack-frontend"
+title: "Decouvre ma stack frontend préférée"
+date: "2025-07-14"
+description: "Qwik, Tailwind, DaisyUI, un combo gagnant en termes de performances, simplicité et plaisir de développement. Spoiler: Qwik, Tailwind, DaisyUI"
+author: "Julien Delage"
+tags:
+  - Tailwind
+  - Qwik
+  - DaisyUI
+  - frontend
+
+readingTime: 6
+featured: true
+image: "https://res.cloudinary.com/ddismuu6q/image/upload/v1752160726/Articles/ma%20stack%20frontend/stack-frontend-fi.png"
+---
+
+# Ma stack frontend préférée
+
+![Ma stack frontend préférée](https://res.cloudinary.com/ddismuu6q/image/upload/v1752160726/Articles/ma%20stack%20frontend/stack-frontend-fi.png)
+
+## Qu'est-ce que j'entends par _stack frontend_ ?
+
+Un _stack frontend_, c’est l’ensemble des outils, technologies et bibliothèques qu’on utilise pour construire les interfaces et les visuels des applications web.  
+Ça inclut les langages, les frameworks, les bibliothèques, les outils de développement, mais aussi ceux liés à la conception ou à la gestion de contenu.
+
+Le sujet est vaste, et bien sûr, j’adapte mes choix en fonction des projets et de leurs besoins.  
+Mais ici, je vais me concentrer sur ce que j’utilise le plus souvent — ce qui forme un tout cohérent, efficace, et adapté à une grande variété de projets.
+
+## Ma stack frontend préférée
+
+Pour le frontend de mes projets, j'utilise principalement :
+
+1. [**Qwik**](https://qwik.dev/) – Framework JavaScript/TypeScript ultra-performant
+2. [**Tailwind CSS**](https://tailwindcss.com/) – Framework CSS utilitaire, rapide et souple
+3. [**DaisyUI**](https://daisyui.com/) – Bibliothèque de composants construite sur Tailwind
+4. [**Cloudinary**](https://cloudinary.com/) – Hébergement et transformation d’images à la volée
+5. [**Figma**](https://www.figma.com/) – Mon outil de design préféré, pour tout ce qui touche à l’UI
+6. [**TailwindFlex**](https://tailwindflex.com/) – Exemples de composants prêts à l’emploi avec Tailwind
+7. [**Univese**](https://uiverse.io/) – Autre excellente ressource de composants Tailwind
+8. [**Nerd Fonts**](https://www.nerdfonts.com/) – Polices monospace (oui, j’ai un faible pour les monos)
+9. [**Fontsource**](https://fontsource.org/) – Bibliothèque de polices, très compatible avec Qwik
+10. [**Animista**](https://animista.net/) – Générateur d’animations CSS simples et efficaces
+
+On a ici un mélange d’outils, de ressources, de bibliothèques et de sites qui facilitent autant le design que le développement d’interfaces frontend.  
+Donc, c’est un peu plus qu’un simple _stack frontend_ classique — c’est un écosystème complet que j’adore utiliser au quotidien.
+
+Vous pouvez aussi voir l'article sur [la creation de ce blog avec ce stack](https://blog.proactitech.com/articles/blog-rapide-performant/)
+
+## Mes critères de choix
+
+Chacun voit midi à sa porte, et il n'existe pas de critères universels.  
+Tout dépend des préférences personnelles, des besoins spécifiques et du niveau de compétence.  
+Avant de partager mes critères principaux, je vais d'abord vous expliquer rapidement le chemin que j’ai parcouru.
+
+### Mon approche personnelle
+
+J'ai commencé sans réel framework, en _vanilla_ : HTML, CSS et JS.  
+Je bricolais des projets simples, souvent des landing pages très basiques.
+
+Très vite, j’ai voulu faire des projets plus complexes : requêtes API sécurisées, composants dynamiques, animations…  
+Mais le JavaScript ne m’a jamais vraiment emballé, et je n’ai jamais pris plaisir à coder le backend en JS.  
+Je préfère largement avoir une API séparée.  
+Ce choix a forcément un impact sur le frontend, notamment dans le choix du framework, car ça ajoute une couche de complexité au développement.
+
+J’ai donc testé différents frameworks : Nuxt, puis NextJS.  
+Je suis resté longtemps sur NextJS, car c’est l’un des plus documentés, avec une grosse communauté, plein de ressources et surtout basé sur React.
+
+Côté CSS, je trouvais les stylesheets classiques un peu lourdes à gérer.  
+J’ai exploré les _styled-components_ ou même les styles en ligne pour des cas simples.  
+Franchement, ce sont de très bonnes solutions, parfois plus adaptées que Tailwind pour des projets massifs et complexes.
+
+Mais pour mes projets plus légers, Tailwind m’a vraiment séduit :  
+simple à utiliser, facile à personnaliser, rapide à mettre en place, et surtout très optimisé.  
+Il permet de gagner du temps en réduisant considérablement le code CSS à écrire — un critère qui pèse lourd dans mes choix.
+
+Pour aller encore plus vite, j’ai voulu ajouter une bibliothèque de composants.  
+J’en ai testé plusieurs : DaisyUI, shadcn, React UI…  
+Mais comme je faisais souvent des projets simples, en vanilla, je cherchais une solution non liée à React.  
+C’est ce qui m’a fait pencher pour **DaisyUI**, qui repose uniquement sur Tailwind.
+
+À ce stade, ma stack était : **NextJS + Tailwind + DaisyUI**.
+
+Puis, avec le temps, j’ai réalisé que NextJS était trop lourd pour mon usage :  
+très complet, mais un peu trop, et parfois lent à charger, notamment à cause de React.  
+Je voulais un framework plus léger, plus rapide, tout en gardant une syntaxe familière.
+
+Et c’est là que j’ai découvert **Qwik**.  
+Sa syntaxe est très proche de React et NextJS, ce qui a rendu la transition super fluide.  
+Résultat : je suis passé sur **Qwik + Tailwind + DaisyUI**, et c’est aujourd’hui ma stack de cœur.
+
+```txt
+Vanilla JS → NextJS + Tailwind → Qwik + Tailwind + DaisyUI
+```
+
+### Mes critères de choix (résumé)
+
+Si vous avez suivi jusque-là, vous pouvez deviner mes critères.  
+Mais pour résumer clairement, les voici :
+
+1. Un framework rapide, efficace et proche de React (pour rester dans un écosystème familier)
+2. Une vraie modularité et une simplicité de code, notamment pour créer des composants réutilisables
+3. Une stylisation simple et rapide à mettre en place (parce que je n’aime pas perdre du temps là-dessus)
+4. Une bibliothèque de composants indépendante du framework, mais suffisamment complète
+5. Pour le design, j’utilise soit **Figma**, soit **Penpot** — mais **Figma** reste ma préférence (y a pas vraiment d’équivalent sérieux)
+6. Et à côté, j’utilise différents outils et sites, selon les besoins, pour fluidifier mon workflow ou automatiser certaines tâches
+
+## Les avantages et les inconvénients de ma stack
+
+### Avantages
+
+- Le combo **Tailwind + DaisyUI** est rapide, efficace, et facilite grandement le développement des interfaces frontend. On gagne beaucoup de temps sur la mise en forme.
+- **Qwik** est ultra-performant grâce à son fonctionnement unique (_resumability_). La documentation est assez solide, et sa syntaxe proche de React rend la prise en main fluide.
+- **Tailwind** bénéficie d’une très large communauté. Il existe une tonne de ressources, de plugins et de composants réutilisables.  
+  Bonus non négligeable : le CSS est généré à la compilation, ce qui évite les fichiers lourds et inutiles.
+- **Cloudinary** s’intègre facilement, fonctionne bien, et offre une diffusion des images rapide et optimisée.
+- **DaisyUI** est excellent pour assurer une cohérence visuelle grâce à son système de thématisation. C’est un gain de temps énorme pour structurer un design sans repartir de zéro.
+
+Voici un exemple de composant de DaisyUI :
+
+```HTML
+<div class="card bg-base-100 w-96 shadow-sm">
+  <figure>
+    <img
+      src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+      alt="Shoes" />
+  </figure>
+  <div class="card-body">
+    <h2 class="card-title">Card Title</h2>
+    <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+    <div class="card-actions justify-end">
+      <button class="btn btn-primary">Buy Now</button>
+    </div>
+  </div>
+</div>
+```
+
+![card component](https://res.cloudinary.com/ddismuu6q/image/upload/v1752496966/Articles/ma%20stack%20frontend/250714_14h35m50s_screenshot_tjq7re.png)
+
+Comme on peut le voir, le code est tres compact et simple pour un composant complet.
+
+### Inconvénients
+
+- **Tailwind**, bien que très puissant, demande une structure de composants claire et bien pensée pour rester lisible à grande échelle.  
+  Comme le style est défini directement dans le HTML (à la manière de l’inline style), le code peut rapidement devenir lourd et difficile à maintenir si mal organisé.
+- **Qwik**, de par son mode d’optimisation très spécifique, crée un écart important entre le code en développement et le rendu final en production.  
+  Il est crucial de tester régulièrement en mode production, car le code y est découpé et optimisé de façon quasi illisible.  
+  À l’inverse, certaines erreurs visibles en dev ne posent aucun problème une fois en production — et ça peut rendre le débogage très compliqué si on s’y prend trop tard.
+- **DaisyUI**, malgré la richesse de ses composants et son excellent système de thèmes, reste parfois limité en termes de design.  
+  Certains composants sont un peu trop basiques ou incomplets, et la responsivité n’est pas toujours parfaite sans ajustements manuels.
+
+## Pour qui est destinée ma stack ?
+
+Bien que cette stack soit polyvalente et techniquement capable de supporter des projets de grande envergure, elle brille surtout sur les projets de taille moyenne à petite.  
+Elle est particulièrement efficace pour les projets où il faut aller vite, notamment sur la mise en place du design et de la thématisation.
+
+Sur des projets plus importants, le design doit généralement être structuré en amont, avec une direction claire, des maquettes, et souvent un système de design séparé.  
+Dans ce contexte, **Tailwind** et **DaisyUI** deviennent moins adaptés, car ils nécessitent de concevoir l’UI autour de leurs contraintes.  
+C’est pourquoi, dans la pratique, on a tendance à éviter Tailwind sur des projets complexes avec des équipes multiples ou des exigences design très spécifiques.
+
+### Et Qwik dans tout ça ?
+
+Sur le papier, **Qwik** est parfaitement taillé pour les projets ambitieux : ultra-rapide, bien optimisé pour le SEO, et pensé pour offrir une expérience fluide à l’utilisateur.
+
+Mais en réalité, il y a plusieurs points à considérer :
+
+- **Qwik est encore jeune**, donc moins connu. En équipe, cela peut poser problème, surtout si tout le monde n’a pas l’habitude de sa syntaxe ou de son fonctionnement.
+- Son système de build très particulier rend le **mode développement et la version production très différents**.  
+  Il faut donc tester régulièrement le build final pour détecter les erreurs dès qu’elles apparaissent, sans quoi le débogage peut devenir un cauchemar.
+- Sur des projets longs ou avec plusieurs contributeurs, **les risques augmentent** : une erreur non détectée peut passer en prod, et il devient alors difficile de la tracer ou de la corriger efficacement.
+
+### En résumé
+
+Ma stack est idéale pour :
+
+- des projets **légers à moyens**, où la rapidité de développement et de chargement est une priorité ;
+- des sites où l’**expérience utilisateur fluide** et la **performance SEO** sont importantes (blogs, pages de vente, e-commerce léger, sites avec interactions dynamiques).
+
+Mais avec une bonne organisation et un peu de rigueur, cette stack peut aussi très bien s’adapter à des projets plus lourds.  
+Il suffit d’avoir conscience des contraintes — et de s’assurer que l’équipe maîtrise bien les outils utilisés.
+
+Par exemple une landing page rapide et tres complete:
+
+![Landing page Qwik](https://res.cloudinary.com/ddismuu6q/image/upload/v1752497321/Articles/ma%20stack%20frontend/250714_14h48m21s_screenshot_ha2hd1.png)
+
+Vous pouvez trouver plus d'exemples concrets sur le site de Qwik : [https://qwik.dev/showcase/](https://qwik.dev/showcase/)

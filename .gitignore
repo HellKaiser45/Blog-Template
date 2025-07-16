@@ -1,0 +1,23 @@
+### 🔧 Build Artifacts ###
+/dist/          # Dossier de build/output (ignoré partout)
+/adapter/       # Si c'est un dossier généré (sinon, ne pas l'ignorer !)
+
+### 📦 Dependencies ###
+/node_modules/  # Dependencies (ignoré à la racine)
+.bun/          # Cache de Bun (si utilisé)
+
+### 🚨 Environment ###
+.env            # Fichiers d'environnement (tous)
+.env.local      # Variables locales
+.env.*.local    # Variantes d'environnements locaux
+
+### 🔥 Cache & Temporary Files ###
+.cache/         # Cache (Vite, etc.)
+.mf/            # Module Federation (Webpack)
+.rollup.cache/  # Cache Rollup
+tsconfig.tsbuildinfo  # Cache TypeScript
+/tmp/           # Dossier temporaire (à la racine)
+
+### 🛠️ IDE & Tools ###
+.vscode/        # Configurations d'IDE
+*.local         # Fichiers locaux (extension)
